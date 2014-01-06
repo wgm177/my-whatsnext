@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">whatsNext</string>
+    <string name="action_settings">Settings</string>
+    <string name="next_three">Next three appointments</string>
+    <string name="button_new_appointment">new +</string>
+    <string name="title_activity_appointment">AppointmentActivity</string>
+    <string name="label_what">What</string>
+    <string name="label_list">Upcomming appointments</string>
+    <string name="label_who">Who</string>
+    <string name="label_where">Where</string>
+    <string name="label_repeat">Repeat</string>
+    <string name="what_hint">Title of appointment</string>
+    <string name="btn_week">week</string>
+    <string name="btn_month">month</string>
+    <string name="btn_year">year</string>
+    <string name="button_post">Post Appointment</string>
+
+</resources>
