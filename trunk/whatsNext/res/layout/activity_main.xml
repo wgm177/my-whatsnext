@@ -1,0 +1,89 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	    
+	    <EditText
+	        android:id="@+id/editNewAppointment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+	        android:inputType="text" />
+	
+	    <Button
+	        android:id="@+id/newAppointment"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        
+	        android:onClick="addEvent"
+	        android:text="@string/button_new_appointment" />
+		
+    	</LinearLayout>
+
+	<TextView
+	   
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" 
+	    android:paddingLeft="10dp"
+	     android:paddingBottom="5dp"
+	     android:textSize="18sp" 
+	     android:textColor="#FFFFFF"
+	     android:background="@android:color/black"
+	     android:text="@string/label_list">
+	    
+	</TextView>
+	
+	 <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.1"
+        >   
+	
+		    <ListView
+		        android:id="@+id/listappointments"
+		       	android:layout_height="fill_parent"
+                android:layout_width="fill_parent" >
+		
+		    </ListView>
+		    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        style="?android:attr/buttonBarButtonStyle" 
+ 		>
+	    
+	     <Button
+	        android:id="@+id/week"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:onClick="popList7"
+	        android:text="@string/btn_week" />
+	     
+	      <Button
+	        android:id="@+id/month"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:onClick="popList31"
+	        android:text="@string/btn_month" />
+	
+	    <Button
+	        android:id="@+id/year"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:onClick="popList365"
+	        android:text="@string/btn_year" />
+		
+    	</LinearLayout>
+
+</LinearLayout>
